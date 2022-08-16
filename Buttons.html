@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Design System Phase Two</title>
+    <link class= "icon" rel="icon" type="image/x-icon" href="../img/LogoIconX.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- This is where you put your google font in if applicable -->
+<!--     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet"> -->
+
+<!-- This is the link to the toggle hamburger -->
+	 <link rel="stylesheet" href="../css2/bootstrap.min.css">
+  <link rel="stylesheet" href="../css2/style.css">
+  </head>
+  <body>
+    
+    <div class="d-flex">
+      <nav id="sidebar">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="toggle-btn">
+              <span class="sr-only">Toggle Menu</span>
+                    <div id="nav-icon1" >
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+               </button>
+          </div>
+		<div class="p-4 pt-6">
+      <a href="../designsystem2.html">
+        <img src="../img/ColorLogo4.png" class="card-img-top" alt="Color Logo">
+      </a>
+		
+
+	       <ul class="list-unstyled components">
+	     
+	          <li class="active">
+	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Foundations</a>
+	            
+			            <ul class="collapse list-unstyled" id="homeSubmenu">
+		                <li>
+		                    <a href="../foundation/type.html">Typography</a>
+		                </li>
+		                <li>
+		                    <a href="../foundation/color.html">Color</a>
+		                </li>
+		                <li>
+		                    <a href="../foundation/logo.html">Logo</a>
+		                </li>
+			            </ul>
+	          </li>
+	          
+	          <li>
+              <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
+              <ul class="collapse.show list-unstyled" id="ComponentsSubmenu">
+                <li>
+                  <a href="../components/Cards.html">Cards</a>
+              </li>
+              <li>
+                  <a href="../components/Buttons.html">Buttons</a>
+              </li>
+              <li>
+                  <a href="../components/HeaderFooter.html">Nav Bar & Footer</a>
+              </li>
+              <li>
+                <a href="../components/Graphics.html">Graphics</a>
+            </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#PatternsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Patterns</a>
+            <ul class="collapse list-unstyled" id="PatternsSubmenu">
+              <li>
+                  <a href="../patterns/HomePage.html">Home Pattern</a>
+              </li>
+              <li>
+                  <a href="../patterns/WorkPage.html">Work Pattern</a>
+              </li>
+               
+              </ul>
+	          </li>
+	         
+	         
+	        </ul> 
+
+	      
+
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div class = "container">
+          <div class = "row p-5 pt-6">
+            <div id="content">
+
+              <h1>Buttons</h1>
+              <p>The system design includes one primary button, with three states.</p>
+
+
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Primary Button: normal state
+                  <button type="button" class="btn btn-primary1">Button</button>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Primary Button: hover state
+                  <button type="button" class="btn btn-primary2">Button</button>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Primary Button: inactive state
+                  <button type="button" class="btn btn-primary3">Button</button>
+                </li>
+              </ul>
+              <hr>
+
+              <h2>Accessibility</h2>
+              <p>Buttons must be created with size and color contrast that is visible to all users. The text must be dcesrciptive of what the button is for. The button must react so as to alert the user of its use (i.e.hover state, inactive state).</p>
+    		      <hr>    
+
+              <h2>Usage</h2>
+              <ul>
+                <li>Used to initiate actions</li>
+                <li>Used for page navigation in header</li>
+                <li>Must contain labels - descriptive text</li>
+              </ul>
+    		      <hr> 
+
+              <h2>Code</h2>
+              <h4>Primary Button: normal state</h4>
+              <pre><code>&lt;button type="button" class="btn btn-primary"&gt; Descriptor &lt;/button&gt;</code></pre>
+              <br>
+              
+              <h4>Primary Button: hover state</h4>
+              <pre><code>&lt;button type="button" class="btn btn-primary"&gt; Descriptor &lt;/button&gt;</code></pre>
+              <br>
+              
+              <h4>Primary Button: inactive state</h4>
+              <pre><code>&lt;button type="button" class="btn btn-inverse"&gt; Descriptor &lt;/button&gt;</code></pre>
+    		      
+            
+    
+        </div>      <!-- Content  -->
+      </div><!-- Row  -->
+    </div><!-- Container -->
+</div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); 
+  </style>
+</html>

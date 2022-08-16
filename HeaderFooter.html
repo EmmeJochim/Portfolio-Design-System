@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Design System Phase Two</title>
+    <link class= "icon" rel="icon" type="image/x-icon" href="../img/LogoIconX.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- This is where you put your google font in if applicable -->
+<!--     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet"> -->
+
+<!-- This is the link to the toggle hamburger -->
+	 <link rel="stylesheet" href="../css2/bootstrap.min.css">
+  <link rel="stylesheet" href="../css2/style.css">
+  </head>
+  <body>
+    
+    <div class="d-flex">
+      <nav id="sidebar">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="toggle-btn">
+              <span class="sr-only">Toggle Menu</span>
+                    <div id="nav-icon1" >
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+               </button>
+          </div>
+		<div class="p-4 pt-6">
+		  <a href="../designsystem2.html">
+        <img src="../img/ColorLogo4.png" class="card-img-top" alt="Color Logo">
+      </a>
+
+	       <ul class="list-unstyled components">
+	     
+          <li class="active">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Foundations</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li>
+                  <a href="../foundation/type.html">Typography</a>
+              </li>
+              <li>
+                  <a href="../foundation/color.html">Color</a>
+              </li>
+              <li>
+                  <a href="../foundation/logo.html">Logo</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
+            <ul class="collapse list-unstyled" id="ComponentsSubmenu">
+              <li>
+                  <a href="../components/Cards.html">Cards</a>
+              </li>
+              <li>
+                  <a href="../components/Buttons.html">Buttons</a>
+              </li>
+              <li>
+                  <a href="../components/HeaderFooter.html">Nav Bar & Footer</a>
+              </li>
+              <li>
+                <a href="../components/Graphics.html">Graphics</a>
+            </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#PatternsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Patterns</a>
+            <ul class="collapse list-unstyled" id="PatternsSubmenu">
+              <li>
+                  <a href="../patterns/HomePage.html">Home Pattern</a>
+              </li>
+              <li>
+                  <a href="../patterns/WorkPage.html">Work Pattern</a>
+              </li>
+               
+              </ul>
+	          </li>
+	         
+	         
+	        </ul> 
+
+	      
+
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div class = "container">
+          <div class = "row p-5 pt-6">
+            <div id="content">
+
+              <h1>Navigation Bar & Footer</h1>
+              <p>The navigation bar and footer should be included on all pages, and adjust per device and screen size.</p>
+              <hr>
+              <h2>Navigation Bar</h2>
+              <nav class="navbar">
+                <div class="container-fluid">
+                  <a href="typehierarchy.html">
+                    <img src="../img/Logo3.png" class="card-img-top image-item2" alt="Logo Icon">
+                  </a>
+                  
+                  <button type="button" class="btn btn-primary1 align-left">WORK</button>
+                  <button type="button" class="btn btn-primary1">ABOUT</button>
+                  
+                </div>
+              </nav>
+              <hr>
+              <h2>Accessibility</h2>
+              <p>The nvigation bar should include accessibile colors chosen from the color palette of the design system. All colors and fonts included should take into consideration visual contrast for every user. Within the navigation bar, each button should be descriptive to its action.</p>
+              <hr>
+              <h2>Usage</h2>
+              <ul>
+                <li>Must be used in each web page.</li>
+                <li>Must adjust to every device and screen size.</li>
+                <li>Must contain accessible colors and fonts.</li>
+              </ul>
+              <hr>
+              <h2>Code</h2>
+              <p>Below is an example of the code that can be used to create this navigation bar.</p>
+              <pre><code>
+                &lt;nav class="navbar"&gt;
+                  &lt;div class="container-fluid"&gt;
+                  &lt;a href="typehierarchy.html"&gt;
+                  &lt;img src="../img/Logo3.png" class="card-img-top image-item2" alt="Logo Icon"&gt;
+                  &lt;/a&gt;
+                  &lt;button type="button" class="btn btn-primary1 align-left"&gt; WORK &lt;/button&gt;
+                  &lt;button type="button" class="btn btn-primary1"> ABOUT &lt;/button&gt;                    
+                  &lt;/div &gt;
+                  &lt;/nav &gt;
+              </code></pre>
+            <hr>
+              <h2>Footer</h2>
+              <footer class="footer">
+              <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 footer-text item-footer">
+                      <p> ©copyright Emme Jochim | Last Updated 2022 </p>
+                    </div>
+                    <div class="col-lg-6 align-right">
+                      <img src="../img/dribbble.png" class="card-img-top image-icon" alt="Icon">
+                      &nbsp;
+                      <img src="../img/github.png" class="card-img-top image-icon" alt="Icon">
+                      &nbsp;     
+                      <img src="../img/linkedin.png" class="card-img-top image-icon" alt="Icon">
+                    </div>
+                </div>
+            </div>
+            </footer>
+            <hr>
+            <h2>Accessibility</h2>
+              <p>The footer should include accessibile colors chosen from the color palette of the design system. All colors, icons, and fonts included should take into consideration visual contrast for every user.</p>
+            <hr>
+              <h2>Usage</h2>
+              <ul>
+                <li>Must be used in each web page.</li>
+                <li>Must adjust to every device and screen size.</li>
+                <li>Must contain accessible colors and fonts.</li>
+              </ul>
+              <hr>
+              <h2>Code</h2>
+              <p>Below is an example of the code that can be used to create this footer.</p>
+              <pre><code>
+                &lt;footer class="footer"&gt;
+                  &lt;div class="container-fluid"&gt;
+                   &lt;div class="row"&gt;
+                    &lt;div class="col-lg-6 footer-text item-footer"&gt;
+                      &lt;p> ©copyright Emme Jochim | Last Updated 2022 &lt;/p&gt;
+                   &lt;/div&gt;
+                    &lt;div class="col-lg-6 align-right"&gt;
+                    &lt;img src="../img/dribbble.png" class="card-img-top image-icon" alt="Icon"&gt;
+                        &lt;img src="../img/github.png" class="card-img-top image-icon" alt="Icon"&gt;     
+                        &lt;img src="../img/linkedin.png" class="card-img-top image-icon" alt="Icon"&gt;
+                        &lt;/div>
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/footer&gt;
+              </code></pre>
+
+        </div>      <!-- Content  -->
+      </div><!-- Row  -->
+    </div><!-- Container -->
+</div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); 
+  </style>
+</html>

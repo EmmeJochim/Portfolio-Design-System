@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Design System Phase Two</title>
+    <link class= "icon" rel="icon" type="image/x-icon" href="../img/LogoIconX.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- This is where you put your google font in if applicable -->
+<!--     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet"> -->
+
+<!-- This is the link to the toggle hamburger -->
+	 <link rel="stylesheet" href="../css2/bootstrap.min.css">
+  <link rel="stylesheet" href="../css2/style.css">
+  <link  rel="stylesheet"  href="../css2/prism.css"/>
+
+  </head>
+  <body>
+    
+    <div class="d-flex">
+      <nav id="sidebar">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="toggle-btn">
+              <span class="sr-only">Toggle Menu</span>
+                    <div id="nav-icon1" >
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+               </button>
+          </div>
+		<div class="p-4 pt-6">
+      <a href="../designsystem2.html">
+        <img src="../img/ColorLogo4.png" class="card-img-top" alt="Color Logo">
+      </a>
+
+	       <ul class="list-unstyled components">
+	     
+	          <li class="active">
+	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Foundations</a>
+	            
+			            <ul class="collapse list-unstyled" id="homeSubmenu">
+		                <li>
+		                    <a href="../foundation/type.html">Typography</a>
+		                </li>
+		                <li>
+		                    <a href="../foundation/color.html">Color</a>
+		                </li>
+		                <li>
+		                    <a href="../foundation/logo.html">Logo</a>
+		                </li>
+			            </ul>
+	          </li>
+	          
+	          <li>
+              <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
+              <ul class="collapse.show list-unstyled" id="ComponentsSubmenu">
+                <li>
+                  <a href="../components/Cards.html">Cards</a>
+              </li>
+              <li>
+                  <a href="../components/Buttons.html">Buttons</a>
+              </li>
+              <li>
+                  <a href="../components/HeaderFooter.html">Nav Bar & Footer</a>
+              </li>
+              <li>
+                <a href="../components/Graphics.html">Graphics</a>
+            </li>
+              </ul>
+	          </li>
+
+	          <li>
+              <a href="#PatternsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Patterns</a>
+              <ul class="collapse list-unstyled" id="PatternsSubmenu">
+                 <li>
+                    <a href="../patterns/HomePage.html">Home Pattern</a>
+                </li>
+                <li>
+                    <a href="../patterns/WorkPage.html">Work Pattern</a>
+                </li>
+               
+              </ul>
+	          </li>
+	         
+	         
+	        </ul> 
+
+	      
+
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div class = "container">
+          <div class = "row p-5 pt-6">
+            <div id="content">
+
+              <h1>Cards</h1>
+              <p>The cards below include the original card used for desktop and tablet, and the elongated card used for mobile. Both cards include an image, header, bio text, and all items will be clickable and linked to the project that they preview.</p>
+            <hr>
+              <h2>Card Examples</h2>
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="../img/cardscreen1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Card title</h3>
+                      <p class="card-text">A brief summary of the project linked content.</p>
+                      <p class="linked">All items in card linked.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../img/cardscreen2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">A brief summary of the project linked content.</p>
+                      <p class="linked">All items in card linked.</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+               <hr>
+    		         
+                <h2>Accessibility</h2>
+                <p>All text within each card will include descriptors of the project, and legible font as listed in the <a href="../foundation/type.html">typography page.</a></p>
+                <p>Included: image, header, bio (all items will be linked).</p>
+                <hr>
+                <h2>Usage</h2>
+                <ul>
+                  <li>Used to preview projects.</li>
+                  <li>Used to link to another page.</li>
+                  <li>Must include image, header, and bio.</li>
+                </ul>
+             <hr>
+                <h2>Code</h2>
+                <p>Here is an example of the code used to create the cards above:</p>
+                
+                 
+                 <pre><code>
+                &lt;div&gt; class="row row-cols-1 row-cols-md-3 g-4"&gt;
+                  &lt;div&gt; class="col"&gt;
+                    &lt;div  class="card"&gt;
+                    &lt;img src="..." class="card-img-top" alt="..."&gt;
+                     &lt;div&gt; class="card-body"&gt;
+                      &lt;h5&gt; class="card-title">Card title&gt;
+                      &lt;p&gt; class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&gt;
+                   &lt;/div&gt;
+                 &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div&gt; class="row row-cols-1 row-cols-md-3 g-4"&gt;
+                  &lt;div&gt; class="col"&gt;
+                    &lt;div&gt;  class="card"&gt;
+                    &lt;img&gt; src="..." class="card-img-top" alt="..."&gt;
+                     &lt;div&gt; class="card-body"&gt;
+                      &lt;h5&gt; class="card-title">Card title&gt;
+                      &lt;p&gt; class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&gt;
+                   &lt;/div&gt;
+                 &lt;/div&gt;
+               &lt;/div&gt;
+                    </code></pre>
+                    
+    
+        </div>      <!-- Content  -->
+      </div><!-- Row  -->
+    </div><!-- Container -->
+</div>
+      <script src="../js/prism.js"></script> 
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); 
+  </style>
+</html>
